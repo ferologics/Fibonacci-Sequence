@@ -65,6 +65,7 @@ begin
              a:= b;
              b:= c;
              Form1.Memo1.Text:=IntToStr(c);
+             i:= i+1;
            end;
 end;
 
