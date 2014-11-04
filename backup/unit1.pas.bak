@@ -82,7 +82,7 @@ begin
        b:= c;
        Form1.Memo1.Text:=IntToStr(c);
        i:= i+1;
-     until(i <= indexClena);
+     until(i = indexClena);
 end;
 
 end.
