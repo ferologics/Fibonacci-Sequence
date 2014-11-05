@@ -39,6 +39,7 @@ implementation
 var a,b,c,indexClena,i:Integer;
 procedure TForm1.Button1Click(Sender: TObject);
 begin
+     if (i=0) then Form1.Memo1.Clear;
      a:= 0;
      b:= 1;
      c:= 0;
@@ -48,12 +49,14 @@ begin
            c:= a + b;
            a:= b;
            b:= c;
-           Form1.Memo1.Text:=IntToStr(c);
+           //Form1.Memo1.Lines.Add(IntToStr(c));
          end;
+     Form1.Memo1.Lines.Add(IntToStr(c));
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
+     if (i=0) then Form1.Memo1.Clear;
      a:= 0;
      b:= 1;
      c:= 0;
@@ -64,13 +67,15 @@ begin
              c:= a + b;
              a:= b;
              b:= c;
-             Form1.Memo1.Text:=IntToStr(c);
+             //Form1.Memo1.Lines.Add(IntToStr(c));
              i:= i+1;
            end;
+     Form1.Memo1.Lines.Add(IntToStr(c));
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
+     if (i=0) then Form1.Memo1.Clear;
      a:= 0;
      b:= 1;
      c:= 0;
@@ -80,9 +85,10 @@ begin
        c:= a + b;
        a:= b;
        b:= c;
-       Form1.Memo1.Text:=IntToStr(c);
+       //Form1.Memo1.Lines.Add(IntToStr(c));
        i:= i+1;
      until(i > indexClena);
+     Form1.Memo1.Lines.Add(IntToStr(c));
 end;
 
 end.
