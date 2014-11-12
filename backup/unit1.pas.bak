@@ -49,8 +49,9 @@ begin
            c:= a + b;
            a:= b;
            b:= c;
-           Form1.Memo1.Lines.Add(IntToStr(c));
+           //Form1.Memo1.Lines.Add(IntToStr(c));
          end;
+     Form1.Memo1.Lines.Add(IntToStr(c));
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
@@ -66,9 +67,10 @@ begin
              c:= a + b;
              a:= b;
              b:= c;
-             Form1.Memo1.Lines.Add(IntToStr(c));
+             //Form1.Memo1.Lines.Add(IntToStr(c));
              i:= i+1;
            end;
+     Form1.Memo1.Lines.Add(IntToStr(c));
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
@@ -83,9 +85,10 @@ begin
        c:= a + b;
        a:= b;
        b:= c;
-       Form1.Memo1.Lines.Add(IntToStr(c));
+       //Form1.Memo1.Lines.Add(IntToStr(c));
        i:= i+1;
      until(i > indexClena);
+     Form1.Memo1.Lines.Add(IntToStr(c));
 end;
 
 end.
